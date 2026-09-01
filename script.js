@@ -7,7 +7,7 @@
    Add a new photo by adding one object here — nothing else needs to change.
 --------------------------------------------------------------------------- */
 const galleryImages = [
-  { id: 1,  src: "images/image-01.jpg", title: "Silent Morning",        category: "Portraits",    description: "A quiet moment captured during the early morning light, before the town wakes.", location: "Morang, Nepal", date: "2026-02-11", tags: ["portrait","morning","lifestyle"] },
+  { id: 1,  src: "images/image-01.jpg", title: "Chill With Friends",        category: "Portraits",    description: "Living the moment, making memories with friends.", location: "Bhaderator, Nepal", date: "2026-02-11", tags: ["portrait","evening","lifestyle","friends"] },
   { id: 2,  src: "images/image-02.jpg", title: "Held Gaze",             category: "Portraits",    description: "A steady, unhurried expression, lit from one side by a low window.", location: "Kathmandu, Nepal", date: "2025-11-03", tags: ["portrait","studio","light"] },
   { id: 3,  src: "images/image-03.jpg", title: "Close Study",           category: "Portraits",    description: "A tight portrait study exploring texture and quiet expression.", location: "Bhaktapur, Nepal", date: "2026-01-22", tags: ["portrait","study"] },
   { id: 4,  src: "images/image-04.jpg", title: "Between Words",         category: "Portraits",    description: "Caught mid-thought, in the pause between one sentence and the next.", location: "Patan, Nepal", date: "2024-09-14", tags: ["portrait","candid"] },
