@@ -7,55 +7,67 @@
    Add a new photo by adding one object here — nothing else needs to change.
 --------------------------------------------------------------------------- */
 const galleryImages = [
-  { id: 1,  src: "images/image-01.jpg", title: "Chill With Friends",        category: "Portraits",    description: "Living the moment, making memories with friends.", location: "Bhaderator, Nepal", date: "2026-02-11", tags: ["portrait","evening","lifestyle","friends"] },
-  { id: 2,  src: "images/image-02.jpg", title: "Held Gaze",             category: "Portraits",    description: "A steady, unhurried expression, lit from one side by a low window.", location: "Kathmandu, Nepal", date: "2025-11-03", tags: ["portrait","studio","light"] },
-  { id: 3,  src: "images/image-03.jpg", title: "Close Study",           category: "Portraits",    description: "A tight portrait study exploring texture and quiet expression.", location: "Bhaktapur, Nepal", date: "2026-01-22", tags: ["portrait","study"] },
-  { id: 4,  src: "images/image-04.jpg", title: "Between Words",         category: "Portraits",    description: "Caught mid-thought, in the pause between one sentence and the next.", location: "Patan, Nepal", date: "2024-09-14", tags: ["portrait","candid"] },
-  { id: 5,  src: "images/image-05.jpg", title: "Workshop Light",        category: "Portraits",    description: "Natural light falling across a workspace, softened by dust in the air.", location: "Pokhara, Nepal", date: "2025-05-30", tags: ["portrait","work","light"] },
+  { id: 1,  src: "images/image-01.jpg", title: "Golden Hour Bench",       category: "Moments",      description: "Six friends gathered on a bench as warm sunset light spills over the hills.", location: "Vederator, Nepal", date: "2025-09-14", tags: ["friends","sunset","group","vederator"] },
+  { id: 2,  src: "images/image-02.jpg", title: "Sunny Group Selfie",      category: "Moments",      description: "A bright afternoon selfie with the whole crew — lens flare and all.", location: "Vederator, Nepal", date: "2025-09-14", tags: ["selfie","friends","sunlight","vederator"] },
+  { id: 3,  src: "images/image-03.jpg", title: "City Lights Below",       category: "Nature",       description: "A night stop on the hillside — phone glow, distant city lights and deep darkness.", location: "Heaven Daada, Nepal", date: "2025-10-02", tags: ["night","hills","city-lights","heaven-daada"] },
+  { id: 4,  src: "images/image-04.jpg", title: "Framing the Sunset",      category: "Nature",       description: "Filming the horizon as golden light breaks through misty mountain ridges.", location: "Vederator, Nepal", date: "2025-09-14", tags: ["sunset","mountains","viewpoint","vederator"] },
+  { id: 5,  src: "images/image-05.jpg", title: "Down the Hill Road",      category: "Travel",       description: "Five friends walking away together on a paved road through green hills.", location: "Vederator, Nepal", date: "2025-09-13", tags: ["road","walk","friends","vederator"] },
 
-  { id: 6,  src: "images/image-06.jpg", title: "Ridge Road",            category: "Travel",       description: "A single road tracing the edge of the valley toward the mountains.", location: "Mustang, Nepal", date: "2026-03-02", tags: ["travel","road","mountains"] },
-  { id: 7,  src: "images/image-07.jpg", title: "Terraced Fields",       category: "Travel",       description: "Rice terraces catching the last light before the fog rolls in.", location: "Annapurna, Nepal", date: "2025-10-18", tags: ["travel","fields","landscape"] },
-  { id: 8,  src: "images/image-08.jpg", title: "Harbor at Dusk",        category: "Travel",       description: "Boats settling for the night as the sky shifts from orange to grey.", location: "Kochi, India", date: "2024-12-05", tags: ["travel","harbor","dusk"] },
-  { id: 9,  src: "images/image-09.jpg", title: "Alley Vendor",          category: "Travel",       description: "A narrow street market glimpsed between passing shoulders.", location: "Hanoi, Vietnam", date: "2025-07-09", tags: ["travel","street","market"] },
-  { id: 10, src: "images/image-10.jpg", title: "Salt Flats",            category: "Travel",       description: "An unbroken white horizon, flattened by heat and distance.", location: "Uyuni, Bolivia", date: "2026-01-08", tags: ["travel","landscape","minimal"] },
+  { id: 6,  src: "images/image-06.jpg", title: "Balcony Mirror Selfie",   category: "Moments",      description: "Three friends reflected in glass, hills and rooftops stretching behind them.", location: "Vederator, Nepal", date: "2025-09-13", tags: ["selfie","mirror","balcony","vederator"] },
+  { id: 7,  src: "images/image-07.jpg", title: "Above the Clouds",        category: "Travel",       description: "Standing at the railing with a full sea of clouds rolling below.", location: "Ramita, Nepal", date: "2025-11-08", tags: ["clouds","viewpoint","friends","ramita"] },
+  { id: 8,  src: "images/image-08.jpg", title: "Roadside Pulsar",         category: "Travel",       description: "Arms crossed, bike parked — a quiet pause on a cloudy mountain road.", location: "Ramita, Nepal", date: "2025-11-08", tags: ["motorcycle","pulsar","road","ramita"] },
+  { id: 9,  src: "images/image-09.jpg", title: "Hill Road Selfie",        category: "Moments",      description: "Four friends close together on a winding road with terraced green hills behind.", location: "Ramita, Nepal", date: "2025-11-07", tags: ["selfie","friends","hills","ramita"] },
+  { id: 10, src: "images/image-10.jpg", title: "Grassy Slope Crew",       category: "Moments",      description: "A tight group selfie on a bright green hillside — smiles all around.", location: "Heaven Daada, Nepal", date: "2025-10-03", tags: ["selfie","friends","grass","heaven-daada"] },
 
-  { id: 11, src: "images/image-11.jpg", title: "Fog Line",              category: "Nature",       description: "Low cloud settling into the valley just after sunrise.", location: "Ilam, Nepal", date: "2025-04-21", tags: ["nature","fog","valley"] },
-  { id: 12, src: "images/image-12.jpg", title: "Leaf Study No.3",       category: "Nature",       description: "A close, quiet study of light passing through foliage.", location: "Chitwan, Nepal", date: "2026-02-27", tags: ["nature","macro","study"] },
-  { id: 13, src: "images/image-13.jpg", title: "River Bend",            category: "Nature",       description: "The river slows and curves through a stand of old trees.", location: "Sunkoshi, Nepal", date: "2024-08-16", tags: ["nature","river","forest"] },
-  { id: 14, src: "images/image-14.jpg", title: "Open Field",            category: "Nature",       description: "Wind moving through tall grass under a wide, pale sky.", location: "Rara, Nepal", date: "2025-09-01", tags: ["nature","field","sky"] },
-  { id: 15, src: "images/image-15.jpg", title: "Glacial Ridge",         category: "Nature",       description: "A high ridge line where the last snow holds through summer.", location: "Langtang, Nepal", date: "2026-03-19", tags: ["nature","mountains","snow"] },
+  { id: 11, src: "images/image-11.jpg", title: "Honda on the Pass",       category: "Travel",       description: "Perched on a Honda scooter with stone walls and blue sky on a mountain road.", location: "Namja, Nepal", date: "2025-12-01", tags: ["scooter","honda","road","namja"] },
+  { id: 12, src: "images/image-12.jpg", title: "NTORQ at the Ridge",      category: "Travel",       description: "Resting on a blue TVS NTORQ with layered mountains and big white clouds.", location: "Namja, Nepal", date: "2025-12-01", tags: ["scooter","ntorq","mountains","namja"] },
+  { id: 13, src: "images/image-13.jpg", title: "Beside the Stupa",        category: "Architecture", description: "Standing next to a white Buddhist stupa under a deep blue high-altitude sky.", location: "Atama Ghar, Nepal", date: "2025-08-19", tags: ["stupa","buddhist","sky","atama-ghar"] },
+  { id: 14, src: "images/image-14.jpg", title: "Pointing at the Fog",     category: "Nature",       description: "Seven friends from behind, arms raised toward a wall of thick white fog.", location: "Heaven Daada, Nepal", date: "2025-10-03", tags: ["fog","friends","ridge","heaven-daada"] },
+  { id: 15, src: "images/image-15.jpg", title: "Three in Monochrome",     category: "Art",          description: "A black-and-white low-angle shot of three friends against a plain wall.", location: "Namja, Nepal", date: "2025-12-02", tags: ["black-and-white","portrait","friends","namja"] },
 
-  { id: 16, src: "images/image-16.jpg", title: "Stacked Lines",         category: "Architecture", description: "Repeating balconies forming a quiet rhythm against the sky.", location: "Singapore", date: "2025-06-11", tags: ["architecture","lines","urban"] },
-  { id: 17, src: "images/image-17.jpg", title: "Concrete Hall",         category: "Architecture", description: "A public hall where light enters only through a single seam.", location: "Kathmandu, Nepal", date: "2024-11-27", tags: ["architecture","concrete","interior"] },
-  { id: 18, src: "images/image-18.jpg", title: "Glass Corner",          category: "Architecture", description: "Two facades meeting at a corner, each reflecting the other.", location: "Tokyo, Japan", date: "2026-01-14", tags: ["architecture","glass","reflection"] },
-  { id: 19, src: "images/image-19.jpg", title: "Courtyard Grid",        category: "Architecture", description: "A courtyard laid out in a strict, repeating grid of shadow.", location: "Bhaktapur, Nepal", date: "2025-03-08", tags: ["architecture","courtyard","shadow"] },
-  { id: 20, src: "images/image-20.jpg", title: "Bridge Span",           category: "Architecture", description: "A long span crossing the gorge, seen from directly below.", location: "Bhotekoshi, Nepal", date: "2026-02-02", tags: ["architecture","bridge","structure"] },
+  { id: 16, src: "images/image-16.jpg", title: "Tower View",              category: "Architecture", description: "Looking out from Jataee View Tower over the surrounding landscape.", location: "Jataee View Tower, Nepal", date: "2025-07-22", tags: ["view-tower","landscape","jataee"] },
+  { id: 17, src: "images/image-17.jpg", title: "Heaven Daada Vista",      category: "Nature",       description: "A wide view from Heaven Daada — hills, sky and open distance.", location: "Heaven Daada, Nepal", date: "2025-10-04", tags: ["viewpoint","landscape","heaven-daada"] },
+  { id: 18, src: "images/image-18.jpg", title: "Snow Peaks",              category: "Nature",       description: "Layered ridges leading to snow-capped summits under heavy grey cloud.", location: "Pathibhara, Nepal", date: "2026-01-10", tags: ["mountains","snow","landscape","pathibhara"] },
+  { id: 19, src: "images/image-19.jpg", title: "At the Shrine",           category: "Travel",       description: "A selfie at the Pathibhara shrine — garlands, golden deity and pilgrims nearby.", location: "Pathibhara, Nepal", date: "2026-01-10", tags: ["temple","shrine","pilgrimage","pathibhara"] },
+  { id: 20, src: "images/image-20.jpg", title: "Forest Pilgrims",         category: "Moments",      description: "Four friends in the forest with red headbands and tika after the shrine visit.", location: "Pathibhara, Nepal", date: "2026-01-10", tags: ["friends","forest","pilgrimage","pathibhara"] },
 
-  { id: 21, src: "images/image-21.jpg", title: "Study in Red Ochre",    category: "Art",          description: "An abstract composition built from layered pigment and line.", location: "Studio, Kathmandu", date: "2025-08-23", tags: ["art","abstract","texture"] },
-  { id: 22, src: "images/image-22.jpg", title: "Figure, Unfinished",    category: "Art",          description: "A partially resolved figure study left deliberately incomplete.", location: "Studio, Kathmandu", date: "2024-10-30", tags: ["art","figure","study"] },
-  { id: 23, src: "images/image-23.jpg", title: "Horizon Cut",          category: "Art",          description: "A single line dividing a field of muted, shifting tone.", location: "Studio, Pokhara", date: "2026-01-05", tags: ["art","minimal","tone"] },
-  { id: 24, src: "images/image-24.jpg", title: "Gesture in Grey",       category: "Art",          description: "Fast, loose marks recording a single passing gesture.", location: "Studio, Kathmandu", date: "2025-12-16", tags: ["art","gesture","drawing"] },
+  { id: 21, src: "images/image-21.jpg", title: "Valley Overlook",         category: "Nature",       description: "Standing by a bamboo fence, looking across green valleys toward distant cloud.", location: "Pathibhara, Nepal", date: "2026-01-09", tags: ["valley","mountains","viewpoint","pathibhara"] },
+  { id: 22, src: "images/image-22.jpg", title: "Sea of Clouds Selfie",    category: "Portraits",    description: "A solo selfie with a vast blanket of clouds filling the valley below.", location: "Ramita, Nepal", date: "2025-11-09", tags: ["selfie","clouds","viewpoint","ramita"] },
+  { id: 23, src: "images/image-23.jpg", title: "Mirror Trio",             category: "Moments",      description: "Another balcony mirror shot — three friends with lush hills in the reflection.", location: "Vederator, Nepal", date: "2025-09-13", tags: ["selfie","mirror","friends","vederator"] },
+  { id: 24, src: "images/image-24.jpg", title: "Samala Moment",           category: "Moments",      description: "A candid memory captured during the Samala trip with friends.", location: "Samala, Nepal", date: "2025-06-15", tags: ["friends","trip","samala"] },
 
-  { id: 25, src: "images/image-25.jpg", title: "Quiet Table",           category: "Moments",      description: "The stillness left behind after everyone has stepped away.", location: "Kathmandu, Nepal", date: "2026-03-25", tags: ["moments","still-life","interior"] },
-  { id: 26, src: "images/image-26.jpg", title: "Waiting Room",          category: "Moments",      description: "A brief pause between one appointment and the next.", location: "Lalitpur, Nepal", date: "2024-07-19", tags: ["moments","candid","interior"] },
-  { id: 27, src: "images/image-27.jpg", title: "First Light",           category: "Moments",      description: "The first minutes of the day, before the streets fill.", location: "Bhaktapur, Nepal", date: "2025-02-14", tags: ["moments","morning","street"] },
-  { id: 28, src: "images/image-28.jpg", title: "Passing Rain",          category: "Moments",      description: "A short shower moving through, gone within minutes.", location: "Pokhara, Nepal", date: "2026-01-30", tags: ["moments","rain","weather"] },
-  { id: 29, src: "images/image-29.jpg", title: "Last Call",             category: "Moments",      description: "The last light of a long day, held for just a while longer.", location: "Kathmandu, Nepal", date: "2025-10-02", tags: ["moments","dusk","quiet"] },
+  { id: 25, src: "images/image-25.jpg", title: "Samala Outing",           category: "Moments",      description: "Out together at Samala — another frame from the same journey.", location: "Samala, Nepal", date: "2025-06-15", tags: ["friends","outing","samala"] },
+  { id: 26, src: "images/image-26.jpg", title: "Samala Hangout",          category: "Moments",      description: "Relaxed and casual, somewhere along the Samala route.", location: "Samala, Nepal", date: "2025-06-16", tags: ["friends","casual","samala"] },
+  { id: 27, src: "images/image-27.jpg", title: "Samala Day",              category: "Moments",      description: "One more shot from the Samala day — light, place and company.", location: "Samala, Nepal", date: "2025-06-16", tags: ["friends","day-trip","samala"] },
+  { id: 28, src: "images/image-28.jpg", title: "Flags and Friends",       category: "Moments",      description: "Three friends smiling with the Nepal flag and Lions Club flag behind them.", location: "Ramita, Nepal", date: "2025-11-09", tags: ["friends","flags","ramita"] },
+  { id: 29, src: "images/image-29.jpg", title: "Valley and Snow Peaks",   category: "Nature",       description: "Looking over a deep green valley toward distant snow-capped mountains.", location: "Namja, Nepal", date: "2025-12-03", tags: ["valley","snow","mountains","namja"] },
 ];
 
 const collectionsMeta = [
-  { category: "Portraits",    cover: "images/image-01.jpg", description: "Close, quiet studies of people and expression." },
-  { category: "Travel",       cover: "images/image-08.jpg", description: "Places passed through, and what they left behind." },
-  { category: "Nature",       cover: "images/image-15.jpg", description: "Landscapes and small details from the field." },
-  { category: "Architecture", cover: "images/image-18.jpg", description: "Structure, line and light in built spaces." },
-  { category: "Art",          cover: "images/image-21.jpg", description: "Studio work, abstraction and unfinished ideas." },
-  { category: "Moments",      cover: "images/image-29.jpg", description: "Small, unplanned moments worth keeping." },
+  { category: "Moments",      cover: "images/image-01.jpg", description: "Group selfies, friends and candid memories on the road." },
+  { category: "Travel",       cover: "images/image-08.jpg", description: "Roads, rides, shrines and stops across eastern Nepal." },
+  { category: "Nature",       cover: "images/image-29.jpg", description: "Mountains, fog, valleys and open sky." },
+  { category: "Portraits",    cover: "images/image-22.jpg", description: "Solo frames and close studies of people." },
+  { category: "Architecture", cover: "images/image-13.jpg", description: "Stupas, towers and built landmarks along the way." },
+  { category: "Art",          cover: "images/image-15.jpg", description: "Stylized and monochrome frames with a creative edge." },
 ];
 
 const editorialNotes = [
-  { title: "The art of observation", body: "Sometimes the smallest moments create the strongest memories — a hand resting on a table, light through a doorway, a street a second before it fills." },
-  { title: "Working slowly", body: "Every image here was made by staying somewhere a little longer than felt necessary, and waiting for the ordinary to become specific." },
-  { title: "What the frame leaves out", body: "A photograph is as much a set of decisions about what to exclude as what to include. The edges matter as much as the center." },
+  {
+    title: "Golden hours at Vederator",
+    body: "Sunset benches, hill roads and mirror selfies — the first stops where the group learned to wait for the light together.",
+    location: "Vederator, Nepal",
+  },
+  {
+    title: "Above the clouds",
+    body: "From Ramita and Heaven Daada to Namja on two wheels — viewpoints, fog banks and cold air above the valleys.",
+    location: "Eastern Hills, Nepal",
+  },
+  {
+    title: "Road to Pathibhara",
+    body: "Snow peaks, the shrine visit, red headbands in the forest — frames from the pilgrimage and the long walk back down.",
+    location: "Pathibhara, Nepal",
+  },
 ];
 
 const CATEGORIES = ["All", ...collectionsMeta.map(c => c.category)];
@@ -287,12 +299,14 @@ function renderGallery(){
 
 function buildEditorial(note, imgForCover){
   const wrap = document.createElement("div");
-  wrap.className = "editorial reveal";
+  wrap.className = "editorial";
+  const location = note.location || imgForCover.location;
   wrap.innerHTML = `
     <div class="editorial-frame">
-      <img data-src="${imgForCover.src}" alt="" loading="lazy" decoding="async">
+      <img data-src="${imgForCover.src}" alt="${escapeHtml(imgForCover.title)}" loading="lazy" decoding="async">
     </div>
     <div class="editorial-copy">
+      <span class="editorial-location">${escapeHtml(location)}</span>
       <h3>${note.title}</h3>
       <p>${note.body}</p>
     </div>
@@ -462,7 +476,7 @@ function initSort(){
    13. FEATURED / HERO / COLLECTIONS / STATS  (static, built once)
 --------------------------------------------------------------------------- */
 function renderFeatured(){
-  const feature = galleryImages[13]; // "Open Field" — a calm landscape
+  const feature = galleryImages[13]; // "Pointing at the Fog" — Heaven Daada
   els.featuredFrame.innerHTML = `
     <img data-src="${feature.src}" alt="${escapeHtml(feature.title)}" loading="lazy" decoding="async">
     <span class="featured-tag">FEATURED <span class="count">01 / ${pad(galleryImages.length)}</span></span>
